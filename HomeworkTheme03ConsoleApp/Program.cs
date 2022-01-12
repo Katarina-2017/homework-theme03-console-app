@@ -27,6 +27,14 @@ namespace HomeworkTheme03ConsoleApp
             }
 
             Console.ReadKey();
+
+            Console.WriteLine("\n Задача 2 \n");
+            Console.Write("Приветсвуем вас в игре Blackjack! Сколько у вас карт на руках? ");
+            int interval = int.Parse(Console.ReadLine());
+
+
+
+            Console.ReadKey();
         }
     }
 }
