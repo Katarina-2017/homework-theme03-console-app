@@ -13,6 +13,15 @@ namespace HomeworkTheme03ConsoleApp
             Console.WriteLine("Введите целое число: ");
             int startNumber = int.Parse(Console.ReadLine());
 
+            if (startNumber % 2 == 0)
+            {
+                Console.WriteLine($"Введенное вами число {startNumber} - четное.");
+            }
+            else
+            {
+                Console.WriteLine($"Введенное вами число {startNumber} - нечетное.");
+            }
+
             Console.ReadKey();
         }
     }
