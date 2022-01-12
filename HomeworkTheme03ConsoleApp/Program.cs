@@ -10,7 +10,10 @@ namespace HomeworkTheme03ConsoleApp
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Введите целое число: ");
+            int startNumber = int.Parse(Console.ReadLine());
 
+            Console.ReadKey();
         }
     }
 }
