@@ -10,6 +10,7 @@ namespace HomeworkTheme03ConsoleApp
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("\n Задача 1 \n");
             // Вывод поясняющей надписи
             // Ввод и преобразование числа, веденного с клавиатуры в целый тип данных
             Console.WriteLine("Введите целое число: ");
