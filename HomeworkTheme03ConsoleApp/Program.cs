@@ -38,9 +38,14 @@ namespace HomeworkTheme03ConsoleApp
                               "\n\tЕсли у вас король - введите K. " +
                               "\n\tЕсли у вас туз - введите T.");
 
-            for (int i = 1; i <= interval+1; i++)
+            string userString;
+            int amount=0;
+
+            for (int i = 1; i < interval+1; i++)
             {
                 Console.WriteLine($"Введите номинал {i}-ой карты:");
+                userString=Console.ReadLine();
+                
             }
             Console.ReadKey();
         }
