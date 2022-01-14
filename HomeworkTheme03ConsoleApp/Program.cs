@@ -40,13 +40,24 @@ namespace HomeworkTheme03ConsoleApp
 
             string userString;
             int amount=0;
+            int weight = 10;
 
             for (int i = 1; i < interval+1; i++)
             {
                 Console.WriteLine($"Введите номинал {i}-ой карты:");
                 userString=Console.ReadLine();
-                
+                switch (userString)
+                {
+                    case "J": amount = amount + weight;break;
+                    case "Q": amount = amount + weight; break;
+                    case "K": amount = amount + weight; break;
+                    case "T": amount = amount + weight; break;
+                    default:
+                        int numberCard = int.Parse(userString);
+                        amount = amount + numberCard;break;
+                }
             }
+            Console.WriteLine($"Cуммa всех карт у вас на руках {amount}");
             Console.ReadKey();
         }
     }
