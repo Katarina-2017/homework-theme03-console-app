@@ -71,7 +71,26 @@ namespace HomeworkTheme03ConsoleApp
             Console.WriteLine("Введите целое число: ");
             int userNumber = int.Parse(Console.ReadLine());
 
+            int counter = 1;
+            bool checkPrime = false;
 
+            while (counter <= userNumber-1)
+            {
+                if (userNumber % counter == 0)
+                {
+                    checkPrime = true;
+                }
+                counter++;
+            }
+
+            if (checkPrime == false)
+            {
+                Console.WriteLine($"Введенное число {userNumber} - простое");
+            }
+            else
+            {
+                Console.WriteLine($"Введенное число {userNumber} - не простое");
+            }
         }
     }
 }
