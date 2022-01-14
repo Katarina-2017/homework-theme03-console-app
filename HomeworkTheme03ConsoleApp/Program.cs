@@ -64,14 +64,14 @@ namespace HomeworkTheme03ConsoleApp
                 }
             }
             //вывод найденной суммы на экран
-            Console.Write($"Cуммa всех карт у вас на руках: {amount}");
+            Console.WriteLine($"Cуммa всех карт у вас на руках: {amount}");
             Console.ReadKey();
 
             Console.WriteLine("\n Задача 3 \n");
             Console.WriteLine("Введите целое число: ");
             int userNumber = int.Parse(Console.ReadLine());
 
-            int counter = 1;
+            int counter = 2;
             bool checkPrime = false;
 
             while (counter <= userNumber-1)
@@ -91,6 +91,8 @@ namespace HomeworkTheme03ConsoleApp
             {
                 Console.WriteLine($"Введенное число {userNumber} - не простое");
             }
+
+            Console.ReadKey();
         }
     }
 }
