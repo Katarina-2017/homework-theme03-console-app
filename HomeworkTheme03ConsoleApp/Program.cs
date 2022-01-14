@@ -32,8 +32,16 @@ namespace HomeworkTheme03ConsoleApp
             Console.Write("Приветсвуем вас в игре Blackjack! Сколько у вас карт на руках? ");
             int interval = int.Parse(Console.ReadLine());
 
+            Console.WriteLine("\tЕсли у вас карта с числовым номиналом, введите цифру." +
+                              "\n\tЕсли у вас валет - введите J. " +
+                              "\n\tЕсли у вас дама - введите Q. " +
+                              "\n\tЕсли у вас король - введите K. " +
+                              "\n\tЕсли у вас туз - введите T.");
 
-
+            for (int i = 1; i <= interval+1; i++)
+            {
+                Console.WriteLine($"Введите номинал {i}-ой карты:");
+            }
             Console.ReadKey();
         }
     }
