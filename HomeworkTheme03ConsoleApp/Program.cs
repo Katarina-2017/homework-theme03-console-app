@@ -64,7 +64,40 @@ namespace HomeworkTheme03ConsoleApp
                 }
             }
             //вывод найденной суммы на экран
-            Console.Write($"Cуммa всех карт у вас на руках: {amount}");
+            Console.WriteLine($"Cуммa всех карт у вас на руках: {amount}");
+            Console.ReadKey();
+
+            //вывод поясняющей надписи
+            //Ввод и преобразование числа, веденного с клавиатуры в целый тип данных-число, которое надо проверить на простоту 
+            Console.WriteLine("\n Задача 3 \n");
+            Console.WriteLine("Введите целое число: ");
+            int userNumber = int.Parse(Console.ReadLine());
+
+            //определение переменных: целый тип counter-счетчик цикла, логический тип checkPrime-определяет простоту числа
+            int counter = 2;
+            bool checkPrime = false;
+
+            //проверка числа на простоту: с 2 до userNumber-1
+            while (counter <= userNumber-1)
+            {
+                //если число делится еще какое-то кроме самого себя, то checkPrime = true оно не простое
+                if (userNumber % counter == 0)
+                {
+                    checkPrime = true;
+                }
+                counter++;
+            }
+
+            //вывод результата на экран
+            if (checkPrime == false)
+            {
+                Console.WriteLine($"Введенное число {userNumber} - простое");
+            }
+            else
+            {
+                Console.WriteLine($"Введенное число {userNumber} - не простое");
+            }
+
             Console.ReadKey();
         }
     }
