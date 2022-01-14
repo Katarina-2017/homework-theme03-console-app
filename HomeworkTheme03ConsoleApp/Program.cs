@@ -48,16 +48,16 @@ namespace HomeworkTheme03ConsoleApp
                 userString=Console.ReadLine();
                 switch (userString)
                 {
-                    case "J": amount = amount + weight;break;
-                    case "Q": amount = amount + weight; break;
-                    case "K": amount = amount + weight; break;
-                    case "T": amount = amount + weight; break;
+                    case "J": amount += weight;break;
+                    case "Q": amount += weight; break;
+                    case "K": amount += weight; break;
+                    case "T": amount += weight; break;
                     default:
                         int numberCard = int.Parse(userString);
-                        amount = amount + numberCard;break;
+                        amount += numberCard;break;
                 }
             }
-            Console.WriteLine($"Cуммa всех карт у вас на руках {amount}");
+            Console.Write($"Cуммa всех карт у вас на руках: {amount}");
             Console.ReadKey();
         }
     }
