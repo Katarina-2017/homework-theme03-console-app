@@ -66,6 +66,12 @@ namespace HomeworkTheme03ConsoleApp
             //вывод найденной суммы на экран
             Console.Write($"Cуммa всех карт у вас на руках: {amount}");
             Console.ReadKey();
+
+            Console.WriteLine("\n Задача 3 \n");
+            Console.WriteLine("Введите целое число: ");
+            int userNumber = int.Parse(Console.ReadLine());
+
+
         }
     }
 }
