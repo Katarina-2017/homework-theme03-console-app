@@ -74,18 +74,19 @@ namespace HomeworkTheme03ConsoleApp
             int userNumber = int.Parse(Console.ReadLine());
 
             //определение переменных: целый тип counter-счетчик цикла, логический тип checkPrime-определяет простоту числа
-            int counter = 2;
+            int counter = 1;
             bool checkPrime = false;
 
-            //проверка числа на простоту: с 2 до userNumber-1
-            while (counter <= userNumber-1)
+            //проверка числа на простоту: с 1 до userNumber-1
+            while (counter < userNumber-1)
             {
-                //если число делится еще какое-то кроме самого себя, то checkPrime = true оно не простое
+                //увеличиваем счетчик на 1
+                counter++;
+                //если число делится еще на какое-то кроме самого себя, то checkPrime = true оно не простое
                 if (userNumber % counter == 0)
                 {
                     checkPrime = true;
                 }
-                counter++;
             }
 
             //вывод результата на экран
